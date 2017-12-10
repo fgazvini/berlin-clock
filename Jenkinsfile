@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Sonar') {
             steps {
-                sh "mvn sonar:sonar -Dsonar.host.url=http://l203rs1015.mousquetaires.com:10200 -Dsonar.login=b295bf6cea81410cb8c6fad74d9227ad2e75f2ad
+                sh "mvn sonar:sonar -Dsonar.host.url${env.SONARQUBE_HOST} -Dsonar.login=b295bf6cea81410cb8c6fad74d9227ad2e75f2ad
             }
     }
 }
