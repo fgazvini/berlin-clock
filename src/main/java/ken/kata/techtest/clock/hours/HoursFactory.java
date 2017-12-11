@@ -26,7 +26,7 @@ public class HoursFactory {
                         new Lamp(Color.RED),
                         new Lamp(Color.RED),
                         new Lamp(Color.RED)),
-                (units) -> units / 5);
+                units -> units / 5);
     }
 
     public static TimeUnitPart createBottomPart() {
@@ -35,6 +35,6 @@ public class HoursFactory {
                         new Lamp(Color.RED),
                         new Lamp(Color.RED),
                         new Lamp(Color.RED)),
-                (units) -> units % 5);
+                units -> units % 5);
     }
 }
