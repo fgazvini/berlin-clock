@@ -8,7 +8,7 @@ public class Hours extends AbstractTimeUnit implements TimeUnit {
     public Hours() {
         timeUnitParts = HoursFactory.createParts();
         precondition = new Precondition(
-                (units) -> units >= 1 && units <= 24,
+                units -> units >= 1 && units <= 24,
                 "Hour units must be in range: units >= 1 && units <= 24");
     }
 }
