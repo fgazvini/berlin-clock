@@ -10,6 +10,10 @@ import java.util.List;
 import static java.util.Arrays.asList;
 
 public class HoursFactory {
+    private HoursFactory () {
+        throw new IllegalStateException("Hours Factory utility");
+    }
+    
     public static List<? extends TimeUnit> createParts() {
         return asList(
                 createTopPart(),
