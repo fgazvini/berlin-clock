@@ -13,11 +13,11 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <distributionManagement>
-        <snapshotRepository>
+        <repository>
             <id>artifactory</id>
             <name>artifactory</name>
             <url>${artifactory_url}</url>
-        </snapshotRepository>
+        </repository>
     </distributionManagement>
     <build>
         <plugins>
