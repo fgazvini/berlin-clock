@@ -3,7 +3,7 @@
  
     <groupId>ken</groupId>
     <artifactId>berlin-clock</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.0-RELEASE</version>
     <packaging>jar</packaging>
 
     <name>berlin-clock</name>
