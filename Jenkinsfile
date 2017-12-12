@@ -30,7 +30,9 @@ pipeline {
         }
         stage('Deploy on Artifactory') {
             steps {
-                sh "mvn deploy -DskipTests -Dartifactory_url=${env.ARTIFACTORY_URL}"
+                configFileProvider([configFile(fileId: 'Docker_Maven_settings', variable: 'SETTINGS')]) {
+                    sh "mvn -s $SETTINGS deploy -DskipTests -Dartifactory_url=${env.ARTIFACTORY_URL}"
+                }
             }
         }
     }
